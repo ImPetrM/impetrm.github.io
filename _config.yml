@@ -1,6 +1,21 @@
-title: Martin's blog
-description: Just testing
-
 remote_theme: pages-themes/minimal@v0.2.0
+
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
+
+permalink: /:year/:month/:day/:title/
+
+show_downloads: false
+
+author:
+  name: Martin
+  bio: Software engineer focused on .NET, distributed systems and industrial automation.
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      kind: post
